@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcresult/
+*.log
+.env
+.env.*
+!.env.example
+*.p12
+*.mobileprovision
+
+# Local Vercel project linkage
+.vercel/

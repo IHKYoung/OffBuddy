@@ -1,0 +1,52 @@
+.page {
+  --cream: #fffaf2; --paper: #fffdf9; --ink: #30231e; --slate: #75665c;
+  --orange: #d9662a; --apricot: #ffd29a; --sage: #b9d0a6; --line: rgba(99, 69, 46, .12);
+  color: var(--ink); min-height: 100vh; background: var(--cream); overflow: hidden;
+  font-family: var(--font-wenkai-screen), ui-rounded, system-ui, sans-serif;
+}
+.nav { height: 82px; padding: 0 max(5vw, calc((100vw - 1280px) / 2)); display:flex; align-items:center; justify-content:space-between; gap:24px; background:rgba(255,250,242,.88); }
+.brand { display:flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; font-size:22px; font-weight:800; line-height:1.05; }
+.brand img { border-radius:15px; box-shadow:0 6px 18px rgba(110,61,24,.17); }
+.brand small { display:block; margin-top:5px; color:var(--slate); letter-spacing:.48em; font-size:9px; text-align:center; }
+.nav nav { display:flex; align-items:center; gap:30px; font-size:14px; color:var(--slate); }
+.nav nav a,.policyLinks a { color:inherit; text-decoration:none; }
+.nav nav a:hover,.policyLinks a:hover { color:var(--orange); }
+.navCTA { padding:11px 17px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--ink)!important; }
+.hero { position:relative; min-height:min(740px, calc(100svh - 82px)); display:flex; align-items:center; padding:80px max(8vw, calc((100vw - 1180px) / 2)); overflow:hidden; isolation:isolate; }
+.heroArt { z-index:-3; object-fit:cover; object-position:center 43%; }
+.heroWash { position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,rgba(255,249,238,.94) 0%,rgba(255,247,232,.82) 40%,rgba(255,247,232,.08) 78%),linear-gradient(0deg,rgba(255,250,242,.58),transparent 40%); }
+.heroCopy { max-width:610px; }
+.eyebrow { font-family:ui-sans-serif,system-ui,sans-serif; font-size:11px; line-height:1.6; font-weight:750; letter-spacing:.2em; color:#98582e; }
+.hero h1 { margin:22px 0 17px; font-size:clamp(50px,7vw,84px); line-height:1.13; letter-spacing:.025em; }
+.heroCopy>p:not(.availability) { font-size:18px; line-height:1.95; color:#66564c; }
+.heroActions { display:flex; flex-wrap:wrap; gap:12px; margin-top:31px; }
+.primaryButton,.softButton { display:inline-flex; justify-content:center; align-items:center; border-radius:18px; padding:15px 23px; text-decoration:none; font-size:14px; font-weight:750; }
+.primaryButton { color:#fffaf5; background:linear-gradient(135deg,#ec9850,#da6328); box-shadow:0 9px 24px rgba(192,91,36,.22); }
+.softButton { color:var(--ink); background:rgba(255,253,249,.76); border:1px solid rgba(117,83,49,.15); }
+.availability { margin-top:26px; color:rgba(81,64,51,.76); font:11px ui-sans-serif,system-ui,sans-serif; letter-spacing:.04em; }
+.petBadge { position:absolute; right:max(6vw, calc((100vw - 1240px) / 2)); bottom:70px; display:flex; align-items:center; gap:4px; border-radius:24px; padding:7px 20px 7px 4px; background:rgba(255,253,249,.68); color:#624b3c; font-size:14px; line-height:1.5; backdrop-filter:blur(14px); box-shadow:0 15px 35px rgba(83,53,29,.1); }
+.petBadge img { object-fit:contain; filter:drop-shadow(0 3px 5px rgba(100,54,23,.11)); }
+.promise { padding:108px max(6vw, calc((100vw - 1160px) / 2)) 116px; }
+.sectionIntro { text-align:center; }
+.sectionIntro h2,.privacy h2 { margin:13px 0 6px; font-size:clamp(30px,4vw,46px); line-height:1.28; }
+.sectionIntro>p { color:var(--slate); }
+.featureGrid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-top:54px; }
+.feature { position:relative; min-height:226px; padding:26px 23px; border:1px solid rgba(255,255,255,.94); border-radius:27px; background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(249,234,213,.55)); box-shadow:0 12px 38px rgba(103,68,41,.055); }
+.featureNumber { display:block; color:rgba(151,107,75,.6); font:11px ui-sans-serif,system-ui,sans-serif; }
+.featureIcon { display:block; margin-top:22px; color:var(--orange); font-size:32px; }
+.feature h3 { margin:10px 0 7px; font-size:20px; }
+.feature p { margin:0; color:var(--slate); font-size:13px; line-height:1.8; }
+.closing { display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:clamp(28px,6vw,84px); padding:55px max(7vw, calc((100vw - 1180px) / 2)); border-block:1px solid var(--line); background:#fff6e8; }
+.closing>img { width:100%; height:auto; border-radius:28px; box-shadow:0 18px 55px rgba(99,61,31,.16); }
+.closing h2 { margin:12px 0; font-size:clamp(32px,4vw,50px); line-height:1.36; }
+.closing p,.privacy>p { color:var(--slate); line-height:1.95; }
+.privacy { display:grid; grid-template-columns:1fr 1.05fr; gap:15px 80px; align-items:center; padding:88px max(7vw, calc((100vw - 1180px) / 2)); }
+.privacy h2 { font-size:clamp(26px,3.5vw,39px); }
+.policyLinks { grid-column:2; display:flex; flex-wrap:wrap; gap:22px; font-size:13px; color:var(--orange); }
+.footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px 28px; padding:23px max(5vw, calc((100vw - 1280px) / 2)); border-top:1px solid var(--line); color:var(--slate); font-size:12px; }
+.footer a { color:var(--orange); text-decoration:none; }
+@media(max-width:760px) {
+ .nav { height:70px; padding:0 19px; }.brand {font-size:19px}.brand img{width:40px;height:40px}.nav nav {gap:13px;font-size:12px}.nav nav>a:not(.navCTA){display:none}.navCTA{padding:9px 12px}
+ .hero {min-height:690px;min-height:calc(88svh - 70px);align-items:flex-start;padding:72px 25px 250px}.heroArt{object-position:58% center}.heroWash{background:linear-gradient(90deg,rgba(255,249,238,.91),rgba(255,247,232,.68) 65%,rgba(255,247,232,.2)),linear-gradient(0deg,rgba(255,250,242,.55),transparent 42%)}.hero h1{font-size:53px}.heroCopy>p:not(.availability){font-size:15px}.heroActions{gap:9px}.primaryButton,.softButton{padding:13px 14px;font-size:12px}.petBadge{right:18px;bottom:40px}.promise{padding:76px 20px 82px}.featureGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:33px}.feature{min-height:206px;padding:19px 16px;border-radius:22px}.feature h3{font-size:17px}.feature p{font-size:12px}.closing{grid-template-columns:1fr;padding:30px 21px 42px;gap:25px}.closing h2{font-size:36px}.privacy{grid-template-columns:1fr;padding:70px 23px;gap:12px}.policyLinks{grid-column:1}.footer{padding:22px;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){.page :global(*),.page :global(*::before),.page :global(*::after){scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
