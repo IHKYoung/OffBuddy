@@ -6,7 +6,10 @@ import styles from './site.module.css'
 export const metadata: Metadata = {
   title: 'OffBuddy · 下班搭子',
   description: '到点收工，一起回家。设好工作时长，打开开始倒计时；用一只装金币的小钱袋，记得认真工作，也记得好好生活。',
-  alternates: { canonical: 'https://offbuddy.ahaknow.com/' },
+  alternates: {
+    canonical: 'https://offbuddy.ahaknow.com/',
+    languages: { 'zh-CN': 'https://offbuddy.ahaknow.com/', en: 'https://offbuddy.ahaknow.com/en/' },
+  },
   openGraph: {
     title: 'OffBuddy · 下班搭子',
     description: '到点收工，一起回家。',
@@ -27,14 +30,15 @@ const features = [
 
 export default function OffBuddyHome() {
   return (
-    <main className={styles.page}>
+    <main className={styles.page} lang="zh-CN">
       <header className={styles.nav}>
         <a className={styles.brand} href="./" aria-label="OffBuddy 首页">
           <Image src="/offbuddy/cat-icon.png" alt="" width={44} height={44} priority />
           <span>OffBuddy<small>下 班 搭 子</small></span>
         </a>
         <nav aria-label="主要导航">
-          <a href="#how">怎么陪你</a><a href="#privacy">隐私与记录</a>
+          <a href="#how">怎么陪你</a><a href="/privacy">隐私政策</a>
+          <a className={styles.languageSwitch} href="/en/" lang="en" aria-label="Switch to English">EN</a>
           <a className={styles.navCTA} href="./support/">使用帮助</a>
         </nav>
       </header>

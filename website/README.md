@@ -18,7 +18,9 @@ npm run dev
 - 推荐 Vercel Root Directory 为仓库根目录（留空或 `.`）。根目录 `vercel.json` 已指定依赖安装、构建命令与 `website/out` 输出目录。
 - 也可以把 Root Directory 设为 `website`，此时使用本目录的 `vercel.json`。
 - Production Branch 选择 `baseline`，不要手工覆盖构建命令和输出目录。
-- 首页直接位于 `/`；帮助页 `/support/`；隐私页 `/privacy/`。无需域名重写到 `/offbuddy/`。
+- 中文首页 `/`、使用支持 `/support/`、隐私政策 `/privacy`；英文首页 `/en`、帮助支持 `/en/support/`、隐私政策 `/en/privacy`。两种语言的隐私政策和支持页是独立页面，并可互相切换语言。
+- App Store Connect 的中文 Privacy Policy 与 User Privacy Choices 均使用 `https://offbuddy.ahaknow.com/privacy`；英文（美国）两项均使用 `https://offbuddy.ahaknow.com/en/privacy`。
+- 首页的隐私导航进入独立政策页；无需域名重写到 `/offbuddy/`。
 - 域名：`offbuddy.ahaknow.com`；Vercel 默认域名也直接打开同一首页。
 
 App Store 截图和中英文文案工作台保留在本地 `../store/`，本次 Git 提交不包含这些素材。直接打开 `../store/index.html` 使用。

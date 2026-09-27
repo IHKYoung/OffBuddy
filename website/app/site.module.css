@@ -11,6 +11,8 @@
 .nav nav { display:flex; align-items:center; gap:30px; font-size:14px; color:var(--slate); }
 .nav nav a,.policyLinks a { color:inherit; text-decoration:none; }
 .nav nav a:hover,.policyLinks a:hover { color:var(--orange); }
+.nav nav .languageSwitch { padding:10px 15px; border:1px solid rgba(207,104,47,.2); border-radius:999px; color:var(--orange); background:rgba(255,253,249,.62); font-size:12px; font-weight:750; }
+.nav nav .languageSwitch:hover { background:#fff0dc; }
 .navCTA { padding:11px 17px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--ink)!important; }
 .hero { position:relative; min-height:min(740px, calc(100svh - 82px)); display:flex; align-items:center; padding:80px max(8vw, calc((100vw - 1180px) / 2)); overflow:hidden; isolation:isolate; }
 .heroArt { z-index:-3; object-fit:cover; object-position:center 43%; }
@@ -46,7 +48,7 @@
 .footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px 28px; padding:23px max(5vw, calc((100vw - 1280px) / 2)); border-top:1px solid var(--line); color:var(--slate); font-size:12px; }
 .footer a { color:var(--orange); text-decoration:none; }
 @media(max-width:760px) {
- .nav { height:70px; padding:0 19px; }.brand {font-size:19px}.brand img{width:40px;height:40px}.nav nav {gap:13px;font-size:12px}.nav nav>a:not(.navCTA){display:none}.navCTA{padding:9px 12px}
+ .nav { height:70px; padding:0 19px; }.brand {font-size:19px}.brand img{width:40px;height:40px}.nav nav {gap:13px;font-size:12px}.nav nav>a:not(.navCTA):not(.languageSwitch){display:none}.navCTA{padding:9px 12px}
  .hero {min-height:690px;min-height:calc(88svh - 70px);align-items:flex-start;padding:72px 25px 250px}.heroArt{object-position:58% center}.heroWash{background:linear-gradient(90deg,rgba(255,249,238,.91),rgba(255,247,232,.68) 65%,rgba(255,247,232,.2)),linear-gradient(0deg,rgba(255,250,242,.55),transparent 42%)}.hero h1{font-size:53px}.heroCopy>p:not(.availability){font-size:15px}.heroActions{gap:9px}.primaryButton,.softButton{padding:13px 14px;font-size:12px}.petBadge{right:18px;bottom:40px}.promise{padding:76px 20px 82px}.featureGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:33px}.feature{min-height:206px;padding:19px 16px;border-radius:22px}.feature h3{font-size:17px}.feature p{font-size:12px}.closing{grid-template-columns:1fr;padding:30px 21px 42px;gap:25px}.closing h2{font-size:36px}.privacy{grid-template-columns:1fr;padding:70px 23px;gap:12px}.policyLinks{grid-column:1}.footer{padding:22px;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){.page :global(*),.page :global(*::before),.page :global(*::after){scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
